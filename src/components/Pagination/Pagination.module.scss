@@ -1,0 +1,60 @@
+// :root {
+//   li {
+//     display: inline-flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 10px;
+//     height: 30px;
+//     border: 1px solid #fe5f1e;
+//     color: #fe5f1e;
+//     cursor: pointer;
+//     border-radius: 30px;
+//   }
+// }
+
+.pages {
+  //   display: flex;
+
+  display: flex;
+  justify-content: center;
+  //   li {
+  //       display: inline-flex;
+
+  //   }
+
+  a {
+    color: #fe5f1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    font-weight: 500;
+    border: 1px solid #fe5f1e;
+    cursor: pointer;
+    border-radius: 30px;
+    user-select: none;
+
+    &:hover {
+      background-color: #fe5f1e;
+      color: #fff;
+    }
+  }
+
+  :global {
+    a:active {
+      background-color: darken(#fe5f1e, 12%);
+      transform: translateY(1px);
+    }
+    
+    .selected {
+      a {
+        background-color: #fe5f1e;
+        color: #fff;
+      }
+    }
+  }
+}
